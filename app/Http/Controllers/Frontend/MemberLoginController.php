@@ -33,7 +33,7 @@ class MemberLoginController extends Controller
        if(Auth::attempt($login, $remember)) {
       return redirect('/');
        }else{
-        echo "wrong";
+        return redirect('/member/login');
        }
     }
 

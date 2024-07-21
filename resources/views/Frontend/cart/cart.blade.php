@@ -31,18 +31,18 @@
                     <?php
                     if(Auth::check()){
                     ?>
-                    <input type="hidden" placeholder="Email" name="email" value="{{ Auth::user()->email }}">
-                    <input type="hidden" placeholder="User Name" name="name"value="{{ Auth::user()->name }}">
-                    <input type="hidden" placeholder="Phone" name="phone" value="{{ Auth::user()->phone }}">
-                    <input type="hidden" placeholder="Address" name="address"value="{{ Auth::user()->address }}">
-                    <input type="hidden" id="user_id" value="{{ Auth::user()->id }}">
-                    <button type="submit" class="btn btn-primary">Continue</button>
+                        <input type="hidden" placeholder="Email" name="email" value="{{ Auth::user()->email }}">
+                        <input type="hidden" placeholder="User Name" name="name"value="{{ Auth::user()->name }}">
+                        <input type="hidden" placeholder="Phone" name="phone" value="{{ Auth::user()->phone }}">
+                        <input type="hidden" placeholder="Address" name="address"value="{{ Auth::user()->address }}">
+                        <input type="hidden" id="user_id" value="{{ Auth::user()->id }}">
+                        <button type="submit" class="btn btn-primary">Continue</button>
                     <?php
                     }else{
                     ?>
-                    <p>
-                        <a href="{{ url('/member/login') }}">Vui lòng click vào đây đăng nhập để mua hang!</a>
-                    </p>
+                        <p>
+                            <a href="{{ url('/member/login') }}">Vui lòng click vào đây đăng nhập để mua hang!</a>
+                        </p>
                     <?php
                     }
                     ?>

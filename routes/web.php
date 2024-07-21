@@ -14,6 +14,7 @@ use App\Http\Controllers\Frontend\MemberBlogController;
 use App\Http\Controllers\Frontend\MemberAccountController;
 use App\Http\Controllers\Frontend\CartController;
 use App\Http\Controllers\Frontend\SearchController;
+use App\Http\Controllers\Frontend\FeedBackController;
 use App\Http\Controllers\MailController;
 
 
@@ -50,6 +51,9 @@ Route::group(['middleware' => ['member']], function () {
     Route::post('/search_advanced', [SearchController::class, 'searchProductAdvanced'])->name('search.product.advanced');
     Route::get('/filter-products', [SearchController::class, 'filterProducts']);
 
+    Route::get('/feedback', [FeedbackController::class, 'showForm'])->name('feedback.form');
+    Route::post('/feedback', [FeedbackController::class, 'sendFeedback'])->name('feedback.send');
+    
     Route::post('/yourCart', [MailController::class, 'sendMail']);
 });
 

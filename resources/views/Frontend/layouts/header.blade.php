@@ -112,6 +112,7 @@
 								<li><a href="404.html">404</a></li>
 								<li><a href="contact-us.html">Contact</a></li>
 								<li><a href="{{url ('search_advanced')}}">Search Advanced</a></li>
+								<li><a href="{{url ('feedback')}}">Feedback</a></li>
 							</ul>
 						</div>
 					</div>
