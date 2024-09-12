@@ -42,7 +42,7 @@ class MailController extends Controller
         }
     }
 
-    $emailTo = "hoquybinh2001@gmail.com"; // Specify the email address here
+    $emailTo = "truongvanquanglb2016@gmail.com"; // Specify the email address here
     $subject = "Mail order product";
 
     $data = [
